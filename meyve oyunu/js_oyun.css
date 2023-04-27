@@ -24,6 +24,21 @@ body {
     background-color: black;
 }
 
+.btn {
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 150px;
+    height: 35px;
+    z-index: 100;
+    background: linear-gradient(135deg, #c7cf52 0%, #4ce21e 100%);
+    text-decoration: none;
+    border-radius: 30px;
+}
+
 .fruit {
     position: absolute;
     width: 50px;
