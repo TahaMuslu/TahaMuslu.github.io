@@ -9,6 +9,7 @@ var score = 0;
 setTimeout(function () {
     container = document.querySelector(".container");
     Score = document.querySelector("#score");
+    mainPage = document.querySelector(".btn");
 }, 300);
 
 var createFruite = setInterval(fruitCreator, 500);
@@ -28,6 +29,7 @@ function fruitCreator() {
             clearInterval(createFruite);
             container.innerHTML = "";
             container.appendChild(Score);
+            container.appendChild(mainPage);
         }
     });
     container.appendChild(Element);

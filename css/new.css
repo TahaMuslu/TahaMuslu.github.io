@@ -41,6 +41,32 @@ html {
     padding: 1rem;
 }
 
+@media screen and (max-width: 992px) {
+    .nav-item {
+        border: none !important;
+    }
+}
+
+
+.nav-item:hover {
+    background: -webkit-linear-gradient(315deg, #b4bb4d 0%, #42b81a 100%) !important;
+}
+
+.nav-item:hover a {
+    color: #ffffff;
+}
+
+#alert {
+    background: -webkit-linear-gradient(315deg, #b4bb4d 0%, #42b81a 100%) !important;
+    position: fixed;
+    top: 80px;
+    right: 30px;
+    z-index: 1000;
+    width: 40%;
+    margin: auto;
+}
+
+
 .feature {
     display: inline-flex;
     align-items: center;

@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>♦ Özgeçmiş</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Custom Google font-->
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet" />
-    <!-- Bootstrap icons-->
+    <!-- Bootstrap icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Custom CSS -->
     <link href="css/new.css" rel="stylesheet" />
 </head>
 
 <body class="d-flex flex-column h-100 bg-light">
     <main class="flex-shrink-0">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <!-- Navigation -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark py-3">
             <div class="container px-5">
                 <a class="navbar-brand" href="index.html"><span class="fw-bolder text-gradient">Taha Yasin
                         Muslu</span></a>
@@ -34,15 +35,25 @@
                         class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
-                        <li class="nav-item"><a class="nav-link" href="resume.html">Özgeçmiş</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Projeler</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">İletişim</a></li>
+                        <li class="nav-item border rounded me-4"><a class="nav-link" href="index.html">Ana
+                                Sayfa</a>
+                        </li>
+                        <li class="nav-item border rounded me-4"><a class="nav-link active"
+                                href="resume.html">Özgeçmiş</a>
+                        </li>
+                        <li class="nav-item border rounded me-4"><a class="nav-link" href="projects.html">Projeler</a>
+                        </li>
+                        <li class="nav-item border rounded me-4"><a class="nav-link" href="contact.html">İletişim</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Page Content-->
+        <!-- CV Alert -->
+        <div class="alert alert-success d-none" id="alert" role="alert">
+            CV başarıyla indirildi. <img src="assets/verify.png" style="width: 1.5rem;" alt="">
+        </div>
+        <!-- Page Content -->
         <div class="container px-5 my-5">
             <div class="text-center mb-5">
                 <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Özgeçmiş <img
@@ -50,20 +61,20 @@
             </div>
             <div class="row gx-5 justify-content-center">
                 <div class="col-lg-11 col-xl-9 col-xxl-8">
-                    <!-- Experience Section-->
+                    <!-- Experience Section -->
                     <section>
                         <div class="d-flex align-items-center justify-content-between mb-4">
                             <h2 class="text-prim fw-bolder mb-0">İş Deneyimi <img style="width: 3rem;"
                                     src="assets/business.png" alt="">
                             </h2>
-                            <!-- Download resume button-->
-                            <!-- Note: Set the link href target to a PDF file within your project-->
-                            <a class="btn btn-primary px-4 py-3" download="TahaYasinMuslu_CV.pdf" href="assets/CV.pdf">
+                            <!-- CV download button -->
+                            <a class="btn btn-primary px-4 py-3" id="cv-download-btn" download="TahaYasinMuslu_CV.pdf"
+                                href="assets/CV.pdf">
                                 <div class="d-inline-block bi bi-download me-2"></div>
                                 CV indir
                             </a>
                         </div>
-                        <!-- Experience Card 1-->
+                        <!-- Experience Card 1 -->
                         <div class="card shadow border-0 rounded-4 mb-5">
                             <div class="card-body p-5">
                                 <div class="row align-items-center gx-5">
@@ -80,15 +91,21 @@
                                             sitesi tasarımını ve html, css gibi temel bileşenleri öğrendim. Bunlara ek
                                             olarak python selenium modülü ile uygulamalar yaptım.</div>
                                     </div>
+                                    <div class="mt-4">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d688.5228346545769!2d28.930413207357034!3d40.2081409738667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca11532e671fcf%3A0x9c2ea1212b3d3fb!2sPlt%20Yaz%C4%B1l%C4%B1m%20ve%20Bili%C5%9Fim%20Teknolojileri!5e0!3m2!1str!2str!4v1682665055504!5m2!1str!2str"
+                                            style="border:0;" allowfullscreen="" loading="lazy" width="200" height="150"
+                                            referrerpolicy="no-referrer-when-downgrade" class="col-sm-12"></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <!-- Education Section-->
+                    <!-- Education Section -->
                     <section>
                         <h2 class="text-second fw-bolder mb-4">Eğitim <img style="width: 3rem;"
                                 src="assets/graduation.png" alt=""></h2>
-                        <!-- Education Card 1-->
+                        <!-- Education Card 1 -->
                         <div class="card shadow border-0 rounded-4 mb-5">
                             <div class="card-body p-5">
                                 <div class="row align-items-center gx-5">
@@ -112,10 +129,16 @@
                                             bünyesinde toplayan Marmara Üniversitesi, bu özelliği ile Türkiye’deki tek,
                                             çok dilli üniversitesidir.</div>
                                     </div>
+                                    <div class="mt-4">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4139.813943327747!2d29.132008613298762!3d40.95814189270007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac5d36254bfbb%3A0x8600e6228590693b!2sMarmara%20%C3%9Cniversitesi%20Recep%20Tayyip%20Erdo%C4%9Fan%20K%C3%BClliyesi%20Maltepe%20Yerle%C5%9Fkesi!5e0!3m2!1str!2str!4v1682665980170!5m2!1str!2str"
+                                            style="border:0;" allowfullscreen="" loading="lazy" width="200" height="150"
+                                            referrerpolicy="no-referrer-when-downgrade" class="col-sm-12"></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Education Card 2-->
+                        <!-- Education Card 2 -->
                         <div class="card shadow border-0 rounded-4 mb-5">
                             <div class="card-body p-5">
                                 <div class="row align-items-center gx-5">
@@ -133,18 +156,24 @@
                                             açıldıktan sonra; 1938 – 1946 tarihleri arasında Celal Bayar Kabinesinde
                                             Milli Eğitim Bakanlığı yapan Hasan Ali Yücel'in adı verilmiştir. </div>
                                     </div>
+                                    <div class="mt-4">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6006.689833484018!2d29.012437530655646!3d40.208428410922714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca15c35859db81%3A0x6f3e99a5757ed1cc!2sHasan%20Ali%20Y%C3%BCcel%20Anadolu%20Lisesi!5e0!3m2!1str!2str!4v1682666043178!5m2!1str!2str"
+                                            style="border:0;" allowfullscreen="" loading="lazy" width="200" height="150"
+                                            referrerpolicy="no-referrer-when-downgrade" class="col-sm-12"></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <!-- Divider-->
+                    <!-- Divider -->
                     <div class="pb-5"></div>
-                    <!-- Skills Section-->
+                    <!-- Skills Section -->
                     <section>
-                        <!-- Skillset Card-->
+                        <!-- Skillset Card -->
                         <div class="card shadow border-0 rounded-4 mb-5">
                             <div class="card-body p-5">
-                                <!-- Professional skills list-->
+                                <!-- Skills List -->
                                 <div class="mb-5">
                                     <div class="d-flex align-items-center mb-4">
                                         <div
@@ -184,7 +213,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Languages list-->
+                                <!-- Languages List -->
                                 <div class="mb-0">
                                     <div class="d-flex align-items-center mb-4">
                                         <div
@@ -231,14 +260,23 @@
             </div>
         </div>
     </main>
-    <!-- Footer-->
+    <!-- Footer -->
     <footer class="bg-white py-4 mt-auto">
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
+                <div class="col-auto col-sm-3">
                     <div class="small m-0">Copyright &copy; Taha Yasin Muslu 2023</div>
                 </div>
-                <div class="col-auto">
+                <div class="d-flex justify-content-center fs-2 gap-4 col-6">
+                    <a target="_blank" class="text-gradient" href="https://twitter.com/taha_1216"><i
+                            class="bi bi-twitter"></i></a>
+                    <a target="_blank" class="text-gradient"
+                        href="https://www.linkedin.com/in/taha-yasin-muslu-6348b1135/"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a target="_blank" class="text-gradient" href="https://github.com/TahaMuslu"><i
+                            class="bi bi-github"></i></a>
+                </div>
+                <div class="col-auto col-sm-3">
                     <a class="small" target="_blank" href="https://mit-license.org/">Gizlilik</a>
                     <span class="mx-1">&middot;</span>
                     <a class="small" target="_blank" href="https://mit-license.org/">Şartlar</a>
@@ -248,10 +286,11 @@
             </div>
         </div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <!-- Core theme JS-->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- Custom JS -->
     <script src="js/scripts.js"></script>
 </body>
 
